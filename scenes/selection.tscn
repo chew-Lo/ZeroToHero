@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=3 uid="uid://cf3cp1vt77u7"]
+
+[ext_resource type="Script" uid="uid://ddfjpxeoaw678" path="res://scripts/selection.gd" id="1_kp6es"]
+[ext_resource type="Texture2D" uid="uid://bl86rvfs70due" path="res://assets/items.png" id="1_pnwr1"]
+[ext_resource type="Texture2D" uid="uid://dcsqglc82vq54" path="res://assets/reward.png" id="3_kp6es"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xa3k8"]
+atlas = ExtResource("1_pnwr1")
+region = Rect2(30.713867, 0, 18.236206, 14.824295)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahe6p"]
+atlas = ExtResource("1_pnwr1")
+region = Rect2(-0.46270752, 96.44375, 15.69162, 16.539803)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vfjc"]
+atlas = ExtResource("1_pnwr1")
+region = Rect2(16.925293, 64.63643, 13.147034, 14.419319)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjef4"]
+atlas = SubResource("AtlasTexture_4vfjc")
+
+[node name="selection" type="Node2D"]
+script = ExtResource("1_kp6es")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = -180.00002
+offset_top = 228.0
+offset_right = -50.000015
+offset_bottom = 256.0
+scale = Vector2(3.0181928, 2.866541)
+text = "Select A Reward!"
+
+[node name="warriorButton" type="TextureButton" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -441.00003
+offset_top = -59.0
+offset_right = -423.00003
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(15.63702, 17.80199)
+texture_normal = SubResource("AtlasTexture_xa3k8")
+
+[node name="ArcherButton" type="TextureButton" parent="."]
+offset_left = -115.0
+offset_top = -61.000004
+offset_right = -100.0
+offset_bottom = -45.000004
+scale = Vector2(17.659641, 15.587231)
+texture_normal = SubResource("AtlasTexture_ahe6p")
+
+[node name="MageButton" type="TextureButton" parent="."]
+offset_left = 210.99998
+offset_top = -55.000004
+offset_right = 223.99998
+offset_bottom = -41.000004
+scale = Vector2(19.839573, 17.718502)
+texture_normal = SubResource("AtlasTexture_sjef4")
+
+[node name="Reward" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(0, 6)
+scale = Vector2(1.1269532, 1.0537109)
+texture = ExtResource("3_kp6es")
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = -360.0
+offset_top = 185.0
+offset_right = 456.0
+offset_bottom = 241.0
+theme_override_font_sizes/normal_font_size = 31
+theme_override_font_sizes/bold_font_size = 16
+text = "Warrior                            Archer                               Mage"
