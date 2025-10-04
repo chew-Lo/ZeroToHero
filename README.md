@@ -8,9 +8,9 @@ Desert Battles is an auto-battler game where you start as a novice adventurer an
 ### 🎭 Class System
 - **👶 Start as a Noob**: Begin your journey with basic stats (100 HP, 10 Damage)
 - **🎯 Choose Your Path**: Select from three distinct classes:
-  - **⚔️ Warrior**: High HP (150), moderate damage (15), with Double Strike ability
-  - **🏹 Archer**: Balanced HP (100), high damage (25), with Critical Arrow ability
-  - **✨ Mage**: Lower HP (80), highest damage (35), with Fireball ability
+  - **⚔️ Warrior**: High HP (175), moderate damage (18), with Double Strike ability
+  - **🏹 Archer**: Balanced HP (125), high damage (25), with Critical Arrow ability
+  - **✨ Mage**: Lower HP (100), highest damage (35), with Fireball ability
 
 ### ⚔️ Combat System
 - **🤖 Auto-Battle Mechanics**: Characters automatically approach and engage enemies
@@ -45,7 +45,7 @@ Desert Battles is an auto-battler game where you start as a novice adventurer an
 
 ## 📥 Installation
 1. Clone the repository
-    git clone https://github.com/chew-lo/desert-battles.git
+    git clone https://github.com/chew-Lo/ZeroToHero
 2. Open the project in Godot 4.x
 3. Run the project from the editor or export for your platform
 🎮 Controls
