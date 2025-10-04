@@ -10,7 +10,8 @@ func on_ready():
 	if hp_label:
 		hp_label.text = "HP: " + str(player_hp)
 	
-	DebugLogger.debug_log("you woke up, and you didn't know where you are so you started walking around")
+	DebugLogger.debug_log("A young boy's village was raided by goblins who captured his family.")
+	DebugLogger.debug_log("He grabbed nothing but his courage and set off a journey to save them.")
 
 func perform_class_attack() -> Dictionary:
 	var result = {"damage": player_damage, "message": ""}

@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://br8q8x5qss0kr"]
 
 [ext_resource type="Script" uid="uid://c65a86ykdjwva" path="res://scripts/intro.gd" id="1_yjqpq"]
-[ext_resource type="Texture2D" uid="uid://ou7lhtujd162" path="res://assets/introScene.png" id="2_4bx60"]
+[ext_resource type="Texture2D" uid="uid://bkpb3hafqhwvf" path="res://assets/zerotohero.png" id="2_yjqpq"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_g4887"]
 
@@ -14,17 +14,27 @@ position = Vector2(576, 319)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = SubResource("ImageTexture_g4887")
 
-[node name="IntroScene" type="Sprite2D" parent="."]
-position = Vector2(574, 322.49997)
-scale = Vector2(1.2921349, 1.4752252)
-texture = ExtResource("2_4bx60")
-
 [node name="Button" type="Button" parent="."]
-offset_left = 514.0
-offset_top = 603.0
-offset_right = 606.0
-offset_bottom = 634.0
+offset_left = 507.0
+offset_top = 599.0
+offset_right = 682.0
+offset_bottom = 652.0
+theme_override_font_sizes/font_size = 32
 text = "start game"
 flat = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 8.0
+offset_top = 618.0
+offset_right = 146.0
+offset_bottom = 638.0
+theme_override_font_sizes/normal_font_size = 13
+text = "© 2025 Kyle Lofredo"
+
+[node name="Zerotohero" type="Sprite2D" parent="."]
+show_behind_parent = true
+position = Vector2(589, 321)
+scale = Vector2(1.2819253, 1.4295154)
+texture = ExtResource("2_yjqpq")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
