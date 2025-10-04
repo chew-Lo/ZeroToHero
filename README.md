@@ -60,23 +60,25 @@ The game is fully automatic - simply select your class and watch the battles unf
  Boss battles
  Save system
 
-📁 Project Structure
+## 📁 Project Structure
+
+```
 res://
 ├── assets/
 │   ├── ..
-│   ├── ..
+│   └── ..
 ├── scenes/
 │   ├── characters/ 
 │   │   ├── warrior.tscn 
 │   │   ├── mage.tscn
 │   │   ├── archer.tscn
-│   │   ├── noob.tscn
+│   │   └── noob.tscn
 │   ├── enemies/  
-│ goblin.tscn
+│   │   ├── goblin.tscn
 │   │   ├── goblin_archer.tscn
 │   │   ├── big_goblin.tscn
 │   │   ├── orc.tscn
-│   │   ├── chest.tscn
+│   │   └── chest.tscn
 │   ├── battle.tscn
 │   ├── battle_2.tscn
 │   ├── battle_3.tscn
@@ -91,7 +93,7 @@ res://
 │   ├── reward_3.tscn
 │   ├── selection.tscn
 │   └── zero_to_hero.tscn
-├──  scripts/  
+├── scripts/  
 │   ├── Playerbase.gd
 │   ├── warrior.gd
 │   ├── archer.gd
@@ -118,7 +120,7 @@ res://
 │   ├── start.gd
 │   └── auto_load.gd
 └── README.md
-
+```
 🎯 Skills System
 ⚔️ Warrior Skills
 
